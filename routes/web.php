@@ -20,4 +20,4 @@ Route::get('home',function(){
     return view('home.index');
 });
 Route::get("hello/{name?}",[HelloController::class,'index'])->name('hello.index');
-//Route::get("hello/{name?}",[HelloController::class,'index'])->name('hello.index');
+Route::get("home/{name?}",[HomeController::class,'index'])->name('home.index');
